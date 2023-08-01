@@ -1,12 +1,17 @@
-import './App.css'
+import TodoList from "./todolist";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">To Do List</h1>
-    </>
-  )
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/api/v1/to-do-list" element={<TodoList />} />
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;
