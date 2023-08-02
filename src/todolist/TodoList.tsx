@@ -48,8 +48,8 @@ const TodoList: React.FC = () => {
           <label htmlFor="search">Search:</label>
           <input
             type="text"
-            id="search" // Associate the label with the input field
-            name="Search" // Name attribute to identify the input element
+            id="search"
+            name="Search"
             value={filter.search}
             onChange={(e) => searchFilter(e.target.value)}
           />

@@ -1,6 +1,5 @@
-// TodoInput.test.tsx
 import { render, screen, fireEvent } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect"; // For additional matchers like toBeInTheDocument
+import "@testing-library/jest-dom/extend-expect";
 import userEvent from "@testing-library/user-event";
 import TodoInput from "./TodoInput";
 
