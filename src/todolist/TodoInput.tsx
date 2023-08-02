@@ -57,6 +57,7 @@ const TodoInput: React.FC = () => {
               <img src={base64Image} alt="Selected" width="200" />
             </div>
           )}
+          <label htmlFor="file">Choose an image</label>
           <input
             type="file"
             name="image"

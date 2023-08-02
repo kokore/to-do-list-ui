@@ -45,17 +45,22 @@ const TodoList: React.FC = () => {
     <div className="mx-auto mt-8">
       <div className="flex flex-row-reverse mt-5 mb-5">
         <form>
+          <label htmlFor="search">Search:</label>
           <input
             type="text"
+            id="search" // Associate the label with the input field
+            name="Search" // Name attribute to identify the input element
             value={filter.search}
             onChange={(e) => searchFilter(e.target.value)}
           />
+          <label htmlFor="orderBy">Order By:</label>
           <select name="By" id="orderBy" onChange={onOptionChangeHandler}>
             <option value="">None</option>
             <option value="title">Title</option>
             <option value="date">Date</option>
             <option value="status">Status</option>
           </select>
+          <label htmlFor="orderType">Order Type:</label>
           <select name="type" id="orderType" onChange={onOptionChangeHandler}>
             <option value="">None</option>
             <option value="DESC">DESC</option>
